@@ -2,7 +2,7 @@
 
 ##### 1.实现原理
 
-![客户端架构](E:\Office\技术档\apollo\客户端架构.png)
+![客户端架构](image\客户端架构.png)
 
 客户端实现原理如下：
 
@@ -12,7 +12,7 @@
 
 ##### 2.客户端框架设计
 
-![客户端UML](E:\Office\技术档\apollo\客户端UML.png)
+![客户端UML](image\客户端UML.png)
 
 客户端框架基于观察者模式实现。
 
@@ -59,7 +59,7 @@ appType=YOUR-APP-ID
 
 注意：appID是用来识别应用身份的唯一ID，且必须与配置中心设置的AppId一致。在Apollo配置中心创建项目时，填入的应用Id必须与app.ini里面的一致。（后续可用CMS来进行管理）
 
-![创建项目截图](E:\Office\技术档\apollo\创建项目截图.png)
+![创建项目截图](image\创建项目截图.png)
 
 ##### 3.客户端API使用
 
