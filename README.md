@@ -1,8 +1,8 @@
-#### 一、客户端设计
+### 一、客户端设计
 
-##### 1.实现原理
+#### 1.实现原理
 
-![客户端架构](image\客户端架构.png)
+![客户端架构](https://github.com/onlyou2030/Apollo-Client/blob/master/image/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E6%88%AA%E5%9B%BE.png)
 
 客户端实现原理如下：
 
@@ -10,7 +10,7 @@
 
 2.应用程序可以从Apollo客户端获取最新的配置、订阅配置更新通知。
 
-##### 2.客户端框架设计
+#### 2.客户端框架设计
 
 ![客户端UML](image\客户端UML.png)
 
@@ -26,9 +26,9 @@
 
 
 
-#### 三、客户端的使用
+### 三、客户端的使用
 
-#####1.配置文件
+####1.配置文件
 
 假设app.ini配置文件内容如下：
 
@@ -45,7 +45,7 @@ dataAppID = 172-18-156-31-data
 
 其中apolloServerIp和apolloServerPort分别是Apollo配置中心的IP和端口，requestRate是客户端请求更新的频率，单位为秒（s）。这三个参数是必须要有的。
 
-#####2.应用ID
+####2.应用ID
 
 应用ID在配置文件中的存储格式为：
 
@@ -61,9 +61,9 @@ appType=YOUR-APP-ID
 
 ![创建项目截图](image\创建项目截图.png)
 
-##### 3.客户端API使用
+#### 3.客户端API使用
 
-######注册观察者
+#####注册观察者
 
 （1）首先获得ApolloClient的单例。
 
@@ -83,7 +83,7 @@ Listener *confListener = new ConfigureListener("confAppID");
 configure->RegisterListener(confListener);
 ```
 
-###### 获得全部配置信息
+##### 获得全部配置信息
 
 如果想获得所有配置信息，可以调用以下接口获得。
 
@@ -106,7 +106,7 @@ std::string property = confListener->GetProperty();
 }
 ```
 
-###### 获得单个配置信息
+##### 获得单个配置信息
 
 如果只想获得单个配置信息，且返回字符串结果，可以调用以下接口，即可获得对应的值。
 
@@ -121,7 +121,7 @@ confListener->ParsePropertyInt("ConfServerID");
 confListener->ParsePropertyUint("monitorPort");
 ```
 
-##### 4.应用端实时获得最新配置
+#### 4.应用端实时获得最新配置
 
 目前应用端实时获得最新配置，有两种方法：
 
