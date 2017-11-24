@@ -2,7 +2,7 @@
 
 #### 1.实现原理
 
-![客户端架构](https://github.com/onlyou2030/Apollo-Client/blob/master/image/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E6%88%AA%E5%9B%BE.png)
+![客户端架构](https://github.com/onlyou2030/Apollo-Client/blob/master/image/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%9E%B6%E6%9E%84.png)
 
 客户端实现原理如下：
 
@@ -12,7 +12,7 @@
 
 #### 2.客户端框架设计
 
-![客户端UML](image\客户端UML.png)
+![客户端UML](https://github.com/onlyou2030/Apollo-Client/blob/master/image/%E5%AE%A2%E6%88%B7%E7%AB%AFUML.png)
 
 客户端框架基于观察者模式实现。
 
@@ -59,7 +59,7 @@ appType=YOUR-APP-ID
 
 注意：appID是用来识别应用身份的唯一ID，且必须与配置中心设置的AppId一致。在Apollo配置中心创建项目时，填入的应用Id必须与app.ini里面的一致。（后续可用CMS来进行管理）
 
-![创建项目截图](image\创建项目截图.png)
+![创建项目截图](https://github.com/onlyou2030/Apollo-Client/blob/master/image/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E6%88%AA%E5%9B%BE.png)
 
 #### 3.客户端API使用
 
