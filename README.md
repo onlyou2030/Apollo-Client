@@ -133,7 +133,8 @@ while(1)
    if(confListener->HasUpdated())
    {
       //执行更新后的操作
-   }
+      confListener->SetHasUpdated(false);   //重置_hasUpdated为false
+   }
 }
 ```
 
